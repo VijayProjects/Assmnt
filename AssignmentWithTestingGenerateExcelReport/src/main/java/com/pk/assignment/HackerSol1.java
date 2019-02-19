@@ -1,12 +1,15 @@
-/*Q. Write a java program to sort array*/
-package com.pk.assign;
+/*Q. Given five positive integers, find the minimum and maximum values that can be calculated by summing exactly four of the five integers. Then print the respective minimum and maximum values as a single line of two space-separated long integers.
+
+For example,
+. Our minimum sum is and our maximum sum is . We would print*/
+package com.pk.assignment;
 
 import java.util.Arrays;
 
-public class Assignment5 {
+public class HackerSol1 {
 
-	public static void main(String[] args) {
-		int [] arr= {256741038, 623958417, 467905213, 714532089, 938071625};
+	public String minMaxSum(int [] arr) {
+		//int [] arr= {256741038, 623958417, 467905213, 714532089, 938071625};
 		int carry=0;
 		int holdVal=0;
 		int j=0;
@@ -37,13 +40,13 @@ public class Assignment5 {
 			}
 			
 		}
-		System.out.println(Arrays.toString(arr));
+		//System.out.println(Arrays.toString(arr));
 		 long sumMin=0, sumMax=0;
 	        for(int i=0; i<arr.length-1; i++){
 	            sumMin+=arr[i];
 	            sumMax+=arr[i+1];
 	        }
-	        System.out.print(sumMin+" "+sumMax);
+	        return sumMin+" "+sumMax;
 	}
 
 }
