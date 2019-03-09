@@ -1,0 +1,7 @@
+server :
+  port : 9090
+
+ies : 
+  application :
+    message : Welcome to Spring Boot IES Application-qa
+    name : IES-App 
